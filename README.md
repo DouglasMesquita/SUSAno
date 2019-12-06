@@ -1,0 +1,42 @@
+
+# SUSAno
+
+O sistema SUSano faz análises estatísticas de taxas de atendimento por
+habitante pelo SUS, e permite identificar com facilidade ocorrências de
+valores extraordinários nessas taxas. O SUSANO é uma evolução e uma
+simplificação do sistema InfoSAS, desenvolvido em uma parceria entre o
+DRAC/MS e a UFMG.
+
+O acesso ao sistema é feito por dois módulos:
+
+  - SUSano EMA: [Colab SUSano
+    EMA](https://colab.research.google.com/drive/1rGBtzqSH5hE0wQ4zy7c-%2087z1FUKmo_CK)
+  - SUSano gerencial: [Colab SUSano
+    gerencial](https://colab.research.google.com/drive/1rGBtzqSH5hE0wQ4zy7c-%2087z1FUKmo_CK)
+
+O SUSano Gerencial encontra-se em fase de verificação e ajustes.
+
+## Créditos
+
+O SUSano sintetiza ideias amadurecidas por toda a equipe que realizou o
+desenvolvimento do InfoSAS.
+
+  - O sistema consiste de um módulo em R (este repositório),
+    desenvolvida por [Douglas R. Mesquita
+    Azevedo](https://www.require-r.com/), e uma parte em Python,
+    desenvolvida por Osvaldo Carvalho.
+  - Os dados utilizados provêm do DATASUS, ANS e IBGE.
+  - O notebook utilizado pelos usuários finais roda no Google
+    Colaboratory, utilizando dados armazenados no Google Cloud Storage.
+  - Os pacotes RCurl, rvest, dplyr, stringr, read.dbc, readxl e spdep
+    são utilizados no módulo em R para tratamento de dados e geração da
+    base de dados que serve de input para o módulo em Python.
+  - Os pacotes Pandas, Plotly e Folium são utilizados no módulo em
+    Python para tratamento de dados, criação de gráficos e de mapas.
+
+## Documentação
+
+Está disponível um [manual de
+utilização](https://drive.google.com/file/d/1cdtFzIR7dqR0vpgYa1-1XFf_y7T-90kt/view)
+que conta com uma documentação mais detalhada do processo de criação do
+projeto.
